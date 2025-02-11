@@ -1,0 +1,50 @@
+h1 {
+    font-size: 3em; /* Tamaño del texto */
+    color: #FF6347;
+    text-align: center;
+    margin-top: 20%;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #FFD700, #FF6347, #FF4500);
+    -webkit-background-clip: text; /* Compatibilidad con navegadores WebKit */
+    background-clip: text; /* Propiedad estándar */
+    color: transparent;
+    animation: fadeIn 2s ease-in-out, bounce 1.5s infinite alternate;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efecto de rebote */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.construction-message {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.construction-message a {
+    color: #FF69B4; /* Color de contacto */
+    text-decoration: underline;
+}
+
+.construction-message a:hover {
+    color: #8A2BE2; /* Cambia el color al pasar el cursor */
+}
